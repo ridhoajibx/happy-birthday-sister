@@ -1303,8 +1303,23 @@ audio {
 
 
     /*controlling tablet width*/
-    /*@media only screen and (max-width: 720px){
-    	.container {
-    		-webkit-transform: scale(0.9);
-    	}
-    }*/
+    @media only screen and (max-width: 720px){
+    	.balloons {
+            position: fixed;
+            bottom: -200px;
+            opacity: 0.6;
+            z-index: 99;
+            width: 80px;
+            height: 160px;
+            background-repeat: no-repeat no-repeat;
+            background-size: 80px 160px;
+        }
+        .balloons h2 {
+            text-transform: uppercase;
+            font-family: 'Signika', sans-serif;
+            font-size: 25px;
+            color: #BF4136;
+            text-shadow: 5px 5px 5px #FFF;
+            display: none;
+        }
+    }
